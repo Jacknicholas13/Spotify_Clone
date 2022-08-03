@@ -1,0 +1,237 @@
+let songs =[
+    {songName: "Kun Faya Fun", filePath: "song1.mp3", coverPath: "cover1.mp3"},
+    {songName: "Athiradee", filePath: "song2.mp3", coverPath: "cover2.mp3"},
+    {songName: "Inum Konjam Neram", filePath: "song3.mp3", coverPath: "cover3.mp3"},
+    {songName: "Rait Zara Si", filePath: "song4.mp3", coverPath: "cover4.mp3"},
+    {songName: "Aalaporan Tamilan", filePath: "song5.mp3", coverPath: "cover5.mp3"},
+    {songName: "Jashn-E-Bahaaraa", filePath: "song6.mp3", coverPath: "cover6.mp3"},
+    {songName: "Adheera", filePath: "song7.mp3", coverPath: "cover7.mp3"},
+    {songName: "New York Nagaram", filePath: "song8.mp3", coverPath: "cover8.mp3"},
+    {songName: "Dil Bechara", filePath: "song9.mp3", coverPath: "cover9.mp3"},
+    {songName: "Kannukul Kannai", filePath: "song10.mp3", coverPath: "cover10.mp3"}
+
+]
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+body{
+    background-color: mistyrose;
+}
+
+*{
+
+    margin: 0;
+    padding: 0;
+
+
+}
+
+nav{
+
+    font-family: 'Ubuntu', sans-serif;
+    
+}
+
+nav ul{
+    display: flex; 
+    align-items: center;
+    list-style-type: none;
+    height: 50px; ;
+    background-color: black;
+    color: white;
+}
+
+nav ul li{
+    padding: 0 12px;
+}
+
+.brand img{
+    width: 50px;
+    padding: 0 8px;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    font-size: 1.3rem;
+}
+
+.container{
+    min-height: 75vh;
+    line-height: 0.8;
+    background-color: black;
+    color: white;
+    font-family: 'Varela Round' , sans-serif;
+    display: flex;
+    margin: 23px auto;
+    width: 70%;
+    border-radius: 12px;
+    padding: 34px;
+    background-image: url('bg.jpg');
+}
+.bottom{
+    position: sticky;
+    height: 130px;
+    background-color: black;
+    color: white;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.icons{
+    margin-top: 14px;
+}
+
+.icons i{
+    size: 20px;
+    cursor: pointer;
+}
+
+#myProgressBar {
+    width: 80vw;
+    text-align: center;
+    cursor: pointer;
+}
+.songItemContainer {
+    margin-top: 74px;
+}
+
+.songItem{
+    height: 50px;
+    display: flex;
+    background-color: white;
+    color: black;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 34px;
+}
+
+.songItem img{
+    width: 43px;
+    margin: 0 23px;
+    border-radius: 34px;
+}
+
+.timestamp{
+    margin: 0 23px; 
+}
+
+.timestamp i{
+    cursor: pointer;
+}
+
+.songInfo{
+    font-family: 'Varela Round' , sans-serif;
+    position: absolute;
+    padding-top: 8px;
+    left: 10vw;
+}
+
+.songInfo img{
+    opacity: 0;
+    transition: opcaity 0.4s ease-in;
+}
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify - fam and jam </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+      <nav>
+          <ul>
+              <li class="brand"><img src="logo.png" width="50px" height="50px" alt="spotify logo" >SPOTIFY</li>
+              <li>Home</li>
+              <li>About</li>
+          </ul>
+      </nav>
+
+      <div class="container">
+          <div class="songList">
+            <h1>Best of Rahman - No copyright Sounds</h1>
+            <div class="songItemContainer">
+                <div class="songItem">
+                    <img src="cover1.jpg" alt="1">
+                    <span>Kun Faya Kun</span>
+                    <span class="songlistplay"><span class="timestamp">07.50<i class="fa-solid fa-circle-play"></i></span></span>
+                </div>
+                <div class="songItem">
+                    <img src="cover2.jpg" alt="1">
+                    <span>Athiradee</span>
+                    <span class="songlistplay"><span class="timestamp">05.44<i class="fa-solid fa-circle-play"></i></span></span>
+                </div>
+                <div class="songItem">
+                    <img src="cover3.jpg" alt="1">
+                    <span>Inum Konjam Neram</span>
+                    <span class="songlistplay"><span class="timestamp">05.33<i class="fa-solid fa-circle-play"></i></span></span>
+                </div>
+                <div class="songItem">
+                    <img src="cover4.jpg" alt="1">
+                    <span>Rait Zara Si</span>
+                    <span class="songlistplay"><span class="timestamp">03.45<i class="fa-solid fa-circle-play"></i></span></span>
+                </div>
+                <div class="songItem">
+                    <img src="cover5.jpg" alt="1">
+                    <span>Aalaporaan Thamizhan</span>
+                    <span class="songlistplay"><span class="timestamp">05.50<i class="fa-solid fa-circle-play"></i></span></span>
+                </div>
+                <div class="songItem">
+                    <img src="cover6.jpg" alt="1">
+                    <span>Jashn-E-Bahaaraa</span>
+                    <span class="songlistplay"><span class="timestamp">04.30<i class="fa-solid fa-circle-play"></i></span></span>
+                </div>
+                <div class="songItem">
+                    <img src="cover7.jpg" alt="1">
+                    <span>Adheera</span>
+                    <span class="songlistplay"><span class="timestamp">04.00<i class="fa-solid fa-circle-play"></i></span></span>
+                </div>
+                <div class="songItem">
+                    <img src="cover8.jpg" alt="1">
+                    <span>New York Nagaram</span>
+                    <span class="songlistplay"><span class="timestamp">04.10<i class="fa-solid fa-circle-play"></i></span></span>
+                </div>
+                <div class="songItem">
+                    <img src="cover9.jpg" alt="1">
+                    <span>Dil Bechara</span>
+                    <span class="songlistplay"><span class="timestamp">03.45<i class="fa-solid fa-circle-play"></i></span></span>
+                </div>
+                <div class="songItem">
+                    <img src="cover10.jpg" alt="1">
+                    <span>Kannukkul Kannai</span>
+                    <span class="songlistplay"><span class="timestamp">05.00<i class="fa-solid fa-circle-play"></i></span></span>
+                </div>
+            </div>
+          </div>
+          <div class="songBanner"></div>
+      </div>
+
+      <div class="bottom">
+          <input type="range" name="range" id="myProgressBar" min="0" value="0" max="100">
+          <div class="icons">
+              <!---fontawesome icons-->
+              <i class="fa-solid fa-backward-step"></i>
+              <i class="fa-solid fa-circle-play" id="masterPlay"></i>
+              <i class="fa-solid fa-forward-step"></i>
+          </div>
+          <div class="songInfo">
+            <img src="playgif.gif" width="42px" alt="2" id="gif">
+         </div>
+      </div>
+      <script src="script.js"></script>
+      <script src="https://kit.fontawesome.com/4a7a3325fb.js" crossorigin="anonymous"></script>
+</body>
+</html> 
